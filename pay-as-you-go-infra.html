@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay As You Go Infra</title>
+  
+    <link rel="icon" href="./assets/icons/kmpx-logo-122x64.png">
+
+    <!-- ***** CSS ***** -->
+    <!-- Resetting Css  -->
+    <link rel="stylesheet" href="./css/resetCss/style.css">
+    <!-- Navigation Css  -->
+    <link rel="stylesheet" href="./css/navigationCss/style.css">
+    <!-- Fonts Css  -->
+    <link rel="stylesheet" href="./css/fontsCss/style.css">
+    <!-- Main Css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Footer Css  -->
+    <link rel="stylesheet" href="./css/footerCss/style.css">
+
+    
+    <!-- ***** JS ***** -->
+    <!-- TypedJS link CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- jQuery CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Navigation JS  -->
+    <script src="./js/hideAndShowJs/script.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- Other CDNs  -->
+      <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="./assets/owlCarousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/owlCarousel/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css" />
+  <link rel="stylesheet" href="./assets/owlCarousel/css/style.css">
+
+
+    <!-- Preloader Script  -->
+<script>
+    window.onload = function () {
+        setTimeout(function () {
+            document.getElementById('patterns').style.display = "none";
+            document.getElementById('content').style.display = "block";
+        }, 5000)
+      }      
+  </script>
+
+
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+body, p, h5 {
+   font-family: 'Roboto Condensed',
+   sans-serif;
+}
+
+h3, h1 {
+  font-family: 'Koulen',
+  cursive;
+}
+
+h4 {
+  font-family: 'Oswald',
+  sans-serif;
+}
+  </style>
+</head>
+
+<body>
+    <!-- Preloader HTML Starts Here -->
+    <!-- <div class="patterns" id="patterns">
+        <svg width="100%" height="100%">
+          <defs>
+            <pattern x="0" y="0" width="100" height="100"
+                     patternUnits="userSpaceOnUse">
+              <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+            </pattern>   
+          </defs>
+       <text x="50%" y="50%"  text-anchor="middle"  >
+         KAYIMPEX
+       </text>
+       </svg>
+    </div> -->
+    <!-- Preloader HTML Ends Here -->
+
+    <!-- Main BODy of the webpage starts here  -->
+    <div id="content1">
+        <!-- Navigation Bar Starts Here  -->
+        <nav class="navigation">
+          <div class="logo">
+            <h3 style="color: aliceblue;"><a href="index.html">KayImpex</a></h3>
+          </div>
+    
+          <div class="hamburger-menu">
+            <div id="ham" class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></div>
+          </div>
+    
+          <div class="social-media">
+            <div class="linkedin"><a href="https://in.linkedin.com/company/kay-impex-pvt.-ltd." target="_blank"
+                id="linkedin"><i class="fab fa-linkedin-in"></i></a></div>
+            <div class="twitter"><a href="https://twitter.com/kay_impex" target="_blank" id="twitter"><i
+                  class="fab fa-twitter"></i></a></div>
+            <div class="envelope"><a href="mailto:hello@kayimpex.com" target="_blank" id="mail"><i
+                  class="far fa-envelope"></i></a></div>
+          </div>
+          <!-- Sidebar with the actual navigation links  -->
+          <div id="mySidebar" class="sidebar">
+            <div class="sidebarBrand">
+    
+              <a href="index.html"><img src="./assets/icons/kmpx-logo-122x64.png" alt="" srcset=""></a>
+    
+            </div>
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+    
+    
+            <div class="banner">
+              <div>
+                <h2 class="welcome">Welcome to KayImpex </h2>
+                <br>
+                <h3>We Deliver <span id="typed"></span></h3>
+              </div>
+    
+              <!-- TypedJS Script and Style Starts Here  -->
+              <script>
+                var typed = new Typed('#typed', {
+                  strings: ['Cloud Services', 'Security', 'IT Infrastructure'],
+                  backSpeed: 40,
+                  typeSpeed: 40,
+                  loop: true,
+                  loopCount: Infinity,
+                  showCursor: true,
+                  cursorChar: '|',
+                  autoInsertCss: true,
+                });
+    
+              </script>
+              <style>
+                .typed-cursor {
+                  color: red;
+                }
+    
+                #typed {
+                  color: #00acee;
+                }
+              </style>
+              <!-- TypedJS Script and Style Ends Here  -->
+            </div>
+    
+            <div class="hybrid-infra" id="hybrid">
+              <a class="links underline-hybrid" id="red" href="#">Hybrid Infrastructure</a>
+              <div class="talk-bubble hybrid tri-right left-top" id="talk-bubble">
+                <div class="talktext">
+                  <div class="subcats">
+                    <div class="one">
+                      <h5> <a class="sublinks hybrid-links" href="datacenter.html">Data Centers</a> </h5>
+                    </div>
+                    <hr style="width: 50%; background: #196a7d;">
+                    <div class="three">
+                      <h5> <a href="server-and-storage.html" class="sublinks hybrid-links">Server And Storage</a> </h5>
+                    </div>
+                    <hr style="width: 50%; background: #196a7d;">
+                    <div class="four">
+                      <h5> <a href="cyber-security.html" class="sublinks hybrid-links">Cyber Security</a> </h5>
+                    </div>
+                    <hr style="width: 50%; background: #196a7d;">
+                    <div class="five">
+                      <h5> <a href="networking.html" class="sublinks hybrid-links">Networking</a> </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="about" id="about">
+              <a class="links underline-about" id="blue" href="#">Digital Workplace</a>
+              <div class="talk-bubble about-us tri-right left-top">
+                <div class="talktext">
+                  <div class="subcats">
+                    <div class="one">
+                      <h5> <a href="digital-workplace.html" class="about-links">Digital Workplace</a> </h5>
+                    </div>
+                    <hr style="width: 50%; background: #63c3bf;">
+                    <div class="two">
+                      <h5> <a href="cloud-services.html" class="about-links"> Cloud Services</a></h5>
+                    </div>
+                    <hr style="width: 50%; background: #63c3bf;">
+                    <div class="three">
+                      <h5> <a href="end-user-computing.html" class="about-links"> End User Computing</a></h5>
+                    </div>
+                    <hr style="width: 50%; background: #63c3bf;">
+                    <div class="four">
+                      <h5> <a href="it-infrastructure-management.html" class="about-links"> IT
+                          Infrastructure Management</a></h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="service-portfolio" id="service-portfolio">
+              <a class="links underline-service" id="service" href="#">Service Portfolio</a>
+              <div class="talk-bubble portfolio tri-right left-top" id="talk-bubble">
+                <div class="talktext">
+                  <div class="subcats">
+                    <div class="one">
+                      <h5> <a href="device-as-a-service.html" class="service-links">Device As A Service</a> </h5>
+                    </div>
+                    <hr style="width: 50%; background: #39A9AA;">
+                    <div class="two">
+                      <h5> <a href="pay-as-you-go-infra.html" class="service-links"> Pay As You Go Infra</a>
+                      </h5>
+                    </div>
+                    <hr style="width: 50%; background: #39A9AA;">
+                    <div class="four">
+                      <h5> <a href="it-finance.html" class="service-links"> IT Finance</a></h5>
+                    </div>
+                    <hr style="width: 50%; background: #39A9AA;">
+                    <div class="five">
+                      <h5> <a href="digital-workspace-support.html" class="service-links">Digital Workspace
+                          Support</a> </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+    
+            <div class="career" id="career">
+              <a class="links underline-career" id="career-about" href="#">About</a>
+              <div class="talk-bubble careerDiv tri-right left-top" id="talk-bubble">
+                <div class="talktext">
+                  <div class="subcats">
+                    <div class="one">
+                      <h5> <a href="contact-us.html" class="career-links">Contact Us</a> </h5>
+                    </div>
+                    <hr style="width: 50%; background: #3EDBF0;">
+                    <div class="two">
+                      <h5> <a href="our-team.html" class="career-links">Our Team</a> </h5>
+                    </div>
+                    <!-- <hr style="width: 50%; background: #3EDBF0;">
+                                    <div class="three">
+                                        <h5> <a href="#" class="career-links">Careers</a> </h5>
+                                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Random Quotes Generator Starts Here  -->
+            <div class="random-sentence"
+              style="background: url('./assets/video_gif_preloader/ezgif-4-2d26a5e333.gif'); background-repeat: round;">
+            </div>
+    
+            <script src="./js/randomQuotes/dist/randomQuotes.min.js"></script>
+            <script>
+              // Example 
+              randomQuotes('.random-sentence', {
+                quotes: [
+                  '“The journey of a thousand miles begins with one step."\n – Lao Tzu',
+                  '“If God did not exist, it would be necessary to invent Him"\n – Voltaire',
+                  '“That which does not kill us makes us stronger."\n – Friedrich Nietzsche',
+                  '“You only live once, but if you do it right, once is enough."\n – Mae West',
+                  '“Tough times never last but tough people do."\n ― Robert H. Schuller',
+                  '"Strive not to be a success, but rather to be of value."\n ―  Albert Einstein',
+                ],
+                loop: true,
+                interval: 3500
+              });
+            </script>
+            <!-- Random Quotes Generator Ends Here  -->
+    
+          </div>
+    
+        </nav>
+
+        <main class="cd-main-content">
+            <section class="banner-section">
+              <div class="common-banner-class payinfra">
+
+              </div>
+            </section>
+
+            <section class="title-section">
+              <div class="page-title">
+                <h1>
+                   PAY AS YOU GO INFRA
+                </h1>
+
+                <p>
+                    Pay-as-you-go consumption-based IT solutions that deliver desired business outcomes with hardware, software and expertise on-premises or in the cloud.. Take advantage of our suite of consumption-based IT solutions – designed, delivered and operated by with a simple, financial model which bills as per usage.
+                </p>
+              </div>
+            </section>
+
+            <section class="pop-up">
+                <div class="container1">
+                  <div class="card">
+                    <div class="image">
+                      <img href="#" src="./assets/symbols/Ready to use infra.png" />
+                      <h3 style="text-align: center">READY TO USE INFRA</h3>
+                    </div>
+                    <div class="content">
+                      <h3>READY TO USE INFRA</h3>
+                      <p>
+                        Benefit from cost on par with public cloud. Use a simple pay-as-you-go metric – you tell us what you need, we deliver it, and you pay for the outcome. Align IT spend to your business priorities with business-friendly payments.
+                      </p>
+                    </div>
+                  </div>
+            
+                  <div class="card">
+                    <div class="image">
+                      <img href="#" src="./assets/symbols/Use based costing.png" />
+                      <h3 style="text-align: center">USE BASED COSTING</h3>
+                    </div>
+                    <div class="content">
+                      <h3>USE BASED COSTING</h3>
+                      <p>
+                        Put your resources where they add value, offload the rest with one partner to optimise, operate, and support the full stack. Deliver reliability, availability, and resilience.
+                      </p>
+                    </div>
+                  </div>
+            
+                  <div class="card">
+                    <div class="image">
+                      <img href="#" src="./assets/symbols/Simplified IT Experience.png" />
+                      <h3 style="text-align: center">SIMPLIFIED IT EXPERIENCE</h3>
+                    </div>
+                    <div class="content">
+                      <h3>SIMPLIFIED IT EXPERIENCE</h3>
+                      <p>
+                        Maintain control over compliance, privacy, data sovereignty, latency, and security. Gain the transparency of usage and cost that you need to effectively govern IT. Move to consumption-based IT at your pace.
+                      </p>
+                    </div>
+                  </div>
+            
+                  <div class="card">
+                    <div class="image">
+                      <img href="#" src="./assets/symbols/control.png" />
+                      <h3 style="text-align: center">CONTROL</h3>
+                    </div>
+                    <div class="content">
+                      <h3>CONTROL</h3>
+                      <p>
+                        Gain flexibility in IT operations but retain control by out-tasking routine data centre work  with 24x7 remote monitoring and management.
+                      </p>
+                    </div>
+                  </div>
+            
+                  <div class="card">
+                    <div class="image">
+                      <img href="#" src="./assets/symbols/Purpose Built Architecture.png" />
+                      <h3 style="text-align: center">PURPOSE BUILT ARCHITECTURE</h3>
+                    </div>
+                    <div class="content">
+                      <h3>PURPOSE BUILT ARCHITECTURE</h3>
+                      <p>
+                        Implement faster by leveraging modern, tested architectures for initial design. Grow and evolve ahead of needs with active capacity planning, so capacity is always ready to provision in minutes, not months, for the next project or customer
+                      </p>
+                    </div>
+                  </div>
+            
+                  <div class="card">
+                    <div class="image">
+                      <img href="#" src="./assets/symbols/Enterprise grade.png"/>
+                      <h3 style="text-align: center">ENTERPRISE GRADE</h3>
+                    </div>
+                    <div class="content">
+                      <h3>ENTERPRISE GRADE</h3>
+                      <p>
+                        Enterprise-grade support Get ongoing operational support  of your choice, tailored to the way you operate.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+    
+              <section class="blog-section" style="background-color: #fff;">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 text-center">
+                      <h2 class="heading-section mb-5 pb-md-4">
+                        Technology Driven Resources
+                      </h2>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="featured-carousel owl-carousel">
+                        <div class="item">
+                          <div class="work">
+                            <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                  background-image: url(./assets/blog_images/image\ 1.jpg);
+                                ">
+                              <a href="https://www.kayimpex.com/blog/2022/04/09/it-simplified-honeypot/" target="_blank"
+                                class="icon d-flex align-items-center justify-content-center">
+                                <span class="ion-ios-search"></span>
+                              </a>
+                            </div>
+                            <div class="text pt-3 w-100 text-center">
+                              <h3><a href="https://www.kayimpex.com/blog/2022/04/09/it-simplified-honeypot/" target="_blank">Honeypot</a></h3>
+                              <span>In computer terminology, a honeypot is a computer
+                                security mechanism set to detect, deflect, or, in some
+                                manner, counteract attempts at...</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="work">
+                            <div class="img d-flex align-items-center justify-content-center rounded" style="
+                                  background-image: url(./assets/blog_images/iamge\ 5.jpg);
+                                ">
+                              <a href="https://www.kayimpex.com/blog/2022/04/20/the-cpu/"
+                                class="icon d-flex align-items-center justify-content-center" target="_blank">
+                                <span class="ion-ios-search"></span>
+                              </a>
+                            </div>
+                            <div class="text pt-3 w-100 text-center">
+                              <h3><a href="https://www.kayimpex.com/blog/2022/04/20/the-cpu/" target="_blank">The CPU</a></h3>
+                              <span>The CPU, or Central Processing Unit, principal part of
+                                any digital computer system, generally composed of the
+                                main memory, control unit...</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="work">
+                            <div class="img d-flex align-items-center justify-content-center rounded"
+                              style="background-image: url(./assets/blog_images/semiconductor.jpeg)">
+                              <a href="https://www.kayimpex.com/blog/2021/12/04/it-simplified-semiconductor/" target="_blank"
+                                class="icon d-flex align-items-center justify-content-center">
+                                <span class="ion-ios-search"></span>
+                              </a>
+                            </div>
+                            <div class="text pt-3 w-100 text-center">
+                              <h3><a href="https://www.kayimpex.com/blog/2021/12/04/it-simplified-semiconductor/" target="_blank">Semiconductors</a></h3>
+                              <span>A semiconductor is a computer chip that serves as the
+                                brain of anything that’s computerized or uses radio
+                                waves...</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="work">
+                            <div class="img d-flex align-items-center justify-content-center rounded"
+                              style="background-image: url(./assets/blog_images/image\ 3.jpg)">
+                              <a href="https://www.kayimpex.com/blog/2022/01/13/how-covid-19-has-pushed-companies-over-the-technology-tipping-point-and-transformed-business-forever/"
+                                target="_blank" class="icon d-flex align-items-center justify-content-center">
+                                <span class="ion-ios-search"></span>
+                              </a>
+                            </div>
+                            <div class="text pt-3 w-100 text-center">
+                              <h3>
+                                <a href="https://www.kayimpex.com/blog/2022/01/13/how-covid-19-has-pushed-companies-over-the-technology-tipping-point-and-transformed-business-forever/" target="_blank">COVID-19 and IT Industry</a>
+                              </h3>
+                              <span>Respondents from the companies that have executed
+                                successful responses to the crisis report a range of
+                                technology capabilities that others...</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="work">
+                            <div class="img d-flex align-items-center justify-content-center rounded"
+                              style="background-image: url(./assets/blog_images/iamge\ 5.jpg)">
+                              <a href="https://www.kayimpex.com/blog/2021/12/24/how-consumer-iot-devices-can-break-your-security/"
+                                target="_blank" class="icon d-flex align-items-center justify-content-center">
+                                <span class="ion-ios-search"></span>
+                              </a>
+                            </div>
+                            <div class="text pt-3 w-100 text-center">
+                              <h3>
+                                <a href="https://www.kayimpex.com/blog/2021/12/24/how-consumer-iot-devices-can-break-your-security/" target="_blank">IoT & Securitites</a>
+                              </h3>
+                              <span>The bad guys gained access to the casino’s network
+                                database by hacking an aquarium control system on the
+                                casino’s main floor...
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="work">
+                            <div class="img d-flex align-items-center justify-content-center rounded"
+                              style="background-image: url(./assets/blog_images/image\ 2.jpg)">
+                              <a href="https://www.kayimpex.com/blog/2021/11/24/six-predictions-for-the-future-of-the-edge/"
+                                target="_blank" class="icon d-flex align-items-center justify-content-center">
+                                <span class="ion-ios-search"></span>
+                              </a>
+                            </div>
+                            <div class="text pt-3 w-100 text-center">
+                              <h3>
+                                <a href="https://www.kayimpex.com/blog/2021/11/24/six-predictions-for-the-future-of-the-edge/" target="_blank">Future of The Edge</a>
+                              </h3>
+                              <span>By the year 2025, the number of connected devices in
+                                the wild is expected to exceed 56 billion, according to
+                                IDC... </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            <section class="footer-section"
+        style="background-image: url(./assets/banner_images/footer_image.webp); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%;">
+        <div class="footer">
+          <div class="footer-container">
+            <div class="footer-links">
+              <div class="logo">
+                <a href="">
+                  <img src="./assets/icons/PNG kayimpex white.webp" alt="" srcset="">
+                </a>
+              </div>
+              <p>
+
+              </p>
+              <p>
+                <a href="">Our Team</a> <br>
+                <!-- <a href="">How We Work</a> <br>
+                        <a href="">Who We Serve</a> <br>
+                        <a href="">Partnerships</a> <br> -->
+                <a href="https://www.kayimpex.com/blog/">Insights</a>
+              </p>
+            </div>
+            <div class="footer-address">
+              <p>Address</p>
+              <p>Kay Impex Pvt. Ltd. <br>
+                B-52, Giriraj Industrial Estate, <br>
+                Opp. Ahura, Mahakali Caves Road, <br>
+                Andheri(EAST). <br>
+                Mumbai-400093 <br>
+                <a class="call-number" href=“tel:+91-22-4031-6800”>+91-22-4031 6800</a><br>
+                <!-- Tel: +91-22-4031 6800 <br> -->
+                <!-- Fax: +91-22-4031 6868 <br> -->
+                E-mail: hello@kayimpex.com</p>
+            </div>
+            <div class="footer-social-links">
+              <p>Connect With Us</p>
+              <div class="footer-icons">
+                <div><a class="ico1" target="_blank" href="https://in.linkedin.com/company/kay-impex-pvt.-ltd."><i
+                      class="fa-brands fa-linkedin"></i></a></div>
+                <div><a class="ico2" target="_blank" href="https://twitter.com/kay_impex"><i
+                      class="fa-brands fa-twitter"></i></a></div>
+                <div><a class="ico3" href="mailto:hello@kayimpex.com"><i class="fa-solid fa-envelope"></i></a></div>
+              </div>
+            </div>
+
+          <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff0; clear:left; font:14px Helvetica,Arial,sans-serif;  width:auto;}
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+     #mc_embed_signup .indicates-required {
+      /* text-align: left; */
+      padding: 10px 0;
+     }
+
+     .brandingLogo {
+      display: none;
+     }
+
+     #mce-EMAIL {
+      padding: 7px;
+     }
+
+     input#mc-embedded-subscribe.button {
+      
+      display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 3px;
+                    padding: 10px 3px;
+                    border: 0;
+                    color: #fff;
+                    background: #0000;
+                    line-height: 1.15;
+                    font-size: 16px; 
+     }
+
+     .mc-field-group {
+      padding: 10px 0;
+     }
+</style>
+<div id="mc_embed_signup">
+    <form action="https://kayimpex.us12.list-manage.com/subscribe/post?u=7437fc216993ab5b7e3073227&amp;id=9a66bb5a5c&amp;f_id=002db7e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+        <div id="mc_embed_signup_scroll">
+        <!-- <h2>Subscribe</h2> -->
+        <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
+<div class="mc-field-group">
+	<!-- <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label> -->
+	<input placeholder="Email Address" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+	<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7437fc216993ab5b7e3073227_9a66bb5a5c" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe to our Newsletter" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <p class="brandingLogo"><a href="http://eepurl.com/h_E4Uz" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+          </div>
+
+          <div class="footer-copyright">
+            <p>© Copyright 2022 Kayimpex Pvt. Ltd. - All Rights Reserved</p>
+          </div>
+        </div>
+      </section>
+        </main>
+
+
+        <!-- <script src="./assets/owlCarousel/js/jquery.min.js"></script> -->
+        <script src="./assets/owlCarousel/js/owl.carousel.min.js"></script>
+        <script src="./assets/owlCarousel/js/main.js"></script>
+    </div>
+</body>
+
+</html>

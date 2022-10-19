@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+  Desgined and Developed By Pranav D.C. Patil
+  Portfolio Site: https://pranavdcpatil.netlify.app/ 
+ -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kay Impex Pvt. Ltd.</title>
+
+  <link rel="icon" href="./assets/icons/kmpx-logo-122x64.png">
+
+  <!-- ***** CSS ***** -->
+  <!-- Resetting Css  -->
+  <link rel="stylesheet" href="./css/resetCss/style.css">
+  <!-- Navigation Css  -->
+  <link rel="stylesheet" href="./css/navigationCss/style.css">
+  <!-- Fonts Css  -->
+  <link rel="stylesheet" href="./css/fontsCss/style.css">
+  <!-- Main Css  -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Footer Css  -->
+  <link rel="stylesheet" href="./css/footerCss/style.css">
+  <!-- Client Logos Carousel Css  -->
+  <link rel="stylesheet" href="./css/clientAndPartnersCss/style.css">
+  <!-- Homepage Css  -->
+  <link rel="stylesheet" href="./css/homePageCss/style.css">
+
+  <!-- ***** JS ***** -->
+  <!-- TypedJS link CDN  -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- jQuery CDN  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Navigation JS  -->
+  <script src="./js/hideAndShowJs/script.js"></script>
+  <script src="./js/main.js"></script>
+
+  <!-- Other CDNs  -->
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- Owl Carousel  -->
+  <link rel="stylesheet" href="./assets/owlCarousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/owlCarousel/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css" />
+  <link rel="stylesheet" href="./assets/owlCarousel/css/style.css">
+
+
+  <!-- Preloader Script  -->
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        document.getElementById('patterns').style.display = "none";
+        document.getElementById('content').style.display = "block";
+      }, 5000)
+    }      
+  </script>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+    body {
+      overflow-x: hidden;
+    }
+
+    #content {
+      overflow-x: clip;
+    }
+
+    body,
+    p,
+    h5 {
+      font-family: 'Roboto Condensed',
+        sans-serif;
+    }
+
+    h3,
+    h1 {
+      font-family: 'Koulen',
+        cursive;
+    }
+
+    h4 {
+      font-family: 'Oswald',
+        sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader HTML Starts Here -->
+  <div class="patterns" id="patterns">
+    <svg width="100%" height="100%">
+      <defs>
+        <pattern x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+          <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+        </pattern>
+      </defs>
+      <text x="50%" y="50%" text-anchor="middle">
+        KAYIMPEX
+      </text>
+    </svg>
+  </div>
+  <!-- Preloader HTML Ends Here -->
+
+  <!-- Main BODy of the webpage starts here  -->
+  <div id="content">
+    <!-- Navigation Bar Starts Here  -->
+    <nav class="navigation">
+      <div class="logo">
+        <h3 style="color: aliceblue;"><a href="index.html">KayImpex</a></h3>
+      </div>
+
+      <div class="hamburger-menu">
+        <div id="ham" class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></div>
+      </div>
+
+      <div class="social-media">
+        <div class="linkedin"><a href="https://in.linkedin.com/company/kay-impex-pvt.-ltd." target="_blank"
+            id="linkedin"><i class="fab fa-linkedin-in"></i></a></div>
+        <div class="twitter"><a href="https://twitter.com/kay_impex" target="_blank" id="twitter"><i
+              class="fab fa-twitter"></i></a></div>
+        <div class="envelope"><a href="mailto:hello@kayimpex.com" target="_blank" id="mail"><i
+              class="far fa-envelope"></i></a></div>
+      </div>
+      <!-- Sidebar with the actual navigation links  -->
+      <div id="mySidebar" class="sidebar">
+        <div class="sidebarBrand">
+
+          <a href="index.html"><img src="./assets/icons/kmpx-logo-122x64.png" alt="" srcset=""></a>
+
+        </div>
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+
+
+        <div class="banner">
+          <div>
+            <h2 class="welcome">Welcome to KayImpex </h2>
+            <br>
+            <h3>We Deliver <span id="typed"></span></h3>
+          </div>
+
+          <!-- TypedJS Script and Style Starts Here  -->
+          <script>
+            var typed = new Typed('#typed', {
+              strings: ['Cloud Services', 'Security', 'IT Infrastructure'],
+              backSpeed: 40,
+              typeSpeed: 40,
+              loop: true,
+              loopCount: Infinity,
+              showCursor: true,
+              cursorChar: '|',
+              autoInsertCss: true,
+            });
+
+          </script>
+          <style>
+            .typed-cursor {
+              color: red;
+            }
+
+            #typed {
+              color: #00acee;
+            }
+          </style>
+          <!-- TypedJS Script and Style Ends Here  -->
+        </div>
+
+        <div class="hybrid-infra" id="hybrid">
+          <a class="links underline-hybrid" id="red" href="#">Hybrid Infrastructure</a>
+          <div class="talk-bubble hybrid tri-right left-top" id="talk-bubble">
+            <div class="talktext">
+              <div class="subcats">
+                <div class="one">
+                  <h5> <a class="sublinks hybrid-links" href="datacenter.html">Data Centers</a> </h5>
+                </div>
+                <hr style="width: 50%; background: #196a7d;">
+                <div class="three">
+                  <h5> <a href="server-and-storage.html" class="sublinks hybrid-links">Server And Storage</a> </h5>
+                </div>
+                <hr style="width: 50%; background: #196a7d;">
+                <div class="four">
+                  <h5> <a href="cyber-security.html" class="sublinks hybrid-links">Cyber Security</a> </h5>
+                </div>
+                <hr style="width: 50%; background: #196a7d;">
+                <div class="five">
+                  <h5> <a href="networking.html" class="sublinks hybrid-links">Networking</a> </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about" id="about">
+          <a class="links underline-about" id="blue" href="#">Digital Workplace</a>
+          <div class="talk-bubble about-us tri-right left-top">
+            <div class="talktext">
+              <div class="subcats">
+                <div class="one">
+                  <h5> <a href="digital-workplace.html" class="about-links">Digital Workplace</a> </h5>
+                </div>
+                <hr style="width: 50%; background: #63c3bf;">
+                <div class="two">
+                  <h5> <a href="cloud-services.html" class="about-links"> Cloud Services</a></h5>
+                </div>
+                <hr style="width: 50%; background: #63c3bf;">
+                <div class="three">
+                  <h5> <a href="end-user-computing.html" class="about-links"> End User Computing</a></h5>
+                </div>
+                <hr style="width: 50%; background: #63c3bf;">
+                <div class="four">
+                  <h5> <a href="it-infrastructure-management.html" class="about-links"> IT
+                      Infrastructure Management</a></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-portfolio" id="service-portfolio">
+          <a class="links underline-service" id="service" href="#">Service Portfolio</a>
+          <div class="talk-bubble portfolio tri-right left-top" id="talk-bubble">
+            <div class="talktext">
+              <div class="subcats">
+                <div class="one">
+                  <h5> <a href="device-as-a-service.html" class="service-links">Device As A Service</a> </h5>
+                </div>
+                <hr style="width: 50%; background: #39A9AA;">
+                <div class="two">
+                  <h5> <a href="pay-as-you-go-infra.html" class="service-links"> Pay As You Go Infra</a>
+                  </h5>
+                </div>
+                <hr style="width: 50%; background: #39A9AA;">
+                <div class="four">
+                  <h5> <a href="it-finance.html" class="service-links"> IT Finance</a></h5>
+                </div>
+                <hr style="width: 50%; background: #39A9AA;">
+                <div class="five">
+                  <h5> <a href="digital-workspace-support.html" class="service-links">Digital Workspace
+                      Support</a> </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="career" id="career">
+          <a class="links underline-career" id="career-about" href="#">About</a>
+          <div class="talk-bubble careerDiv tri-right left-top" id="talk-bubble">
+            <div class="talktext">
+              <div class="subcats">
+                <div class="one">
+                  <h5> <a href="contact-us.html" class="career-links">Contact Us</a> </h5>
+                </div>
+                <hr style="width: 50%; background: #3EDBF0;">
+                <div class="two">
+                  <h5> <a href="our-team.html" class="career-links">Our Team</a> </h5>
+                </div>
+                <!-- <hr style="width: 50%; background: #3EDBF0;">
+                                <div class="three">
+                                    <h5> <a href="#" class="career-links">Careers</a> </h5>
+                                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Random Quotes Generator Starts Here  -->
+        <div class="random-sentence"
+          style="background: url('./assets/video_gif_preloader/ezgif-4-2d26a5e333.gif'); background-repeat: round;">
+        </div>
+
+        <script src="./js/randomQuotes/dist/randomQuotes.min.js"></script>
+        <script>
+          // Example 
+          randomQuotes('.random-sentence', {
+            quotes: [
+              '“The journey of a thousand miles begins with one step."\n – Lao Tzu',
+              '“If God did not exist, it would be necessary to invent Him"\n – Voltaire',
+              '“That which does not kill us makes us stronger."\n – Friedrich Nietzsche',
+              '“You only live once, but if you do it right, once is enough."\n – Mae West',
+              '“Tough times never last but tough people do."\n ― Robert H. Schuller',
+              '"Strive not to be a success, but rather to be of value."\n ―  Albert Einstein',
+            ],
+            loop: true,
+            interval: 3500
+          });
+        </script>
+        <!-- Random Quotes Generator Ends Here  -->
+
+      </div>
+
+    </nav>
+
+    <main class="cd-main-content">
+      <section class="slider-section">
+        <div class="vanillaSlider">
+          <div id="image-comparison-slider">
+            <img src="./assets/banner_images/canva image 1 web i.webp" alt="before">
+            <div class="img-wrapper">
+              <img src="./assets/banner_images/canva inahah 2web i.webp" alt="after">
+            </div>
+            <!-- <span class="label label-before">Before</span>
+                        <span class="label label-after">After</span> -->
+            <div class="handle">
+              <div class="handle-line"></div>
+              <div class="handle-circle">
+                <i class="fas fa-chevron-left"></i>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+              <div class="handle-line"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="section-title">Section TWO</h2>
+      <!-- <section class="four-boxes-section">
+        <section class="sectionBox"  style="background: url('./assets/banner_images_webp/cloud\ computing\ webp\ image.webp');">
+          <div class="close-section">close</div>
+          <div class="demo-box">
+            The sky is the limit when you partner with a IT firm who understands your business. At KAY IMPEX we have the expertise to not just solve your business challenges but also help you grow and transform your business through strategic consulting, operational leadership, and Co-creation of breakthrough solutions.
+
+              Over the last 35 years we have enabled hundred's of our clients in over 300+ locations across India to improve their business and stay ahead of the innovation curve.
+              
+              We provide our customers with the guidance and technology that enables them to operate more efficiently, while ensuring that their IT infrastructure is optimized and pro-actively managed.
+          </div>
+        </section>
+        <section class="sectionBox">
+          <div class="close-section">close</div>
+          <div class="demo-box">
+            Combines technical expertise with an understanding of business goals to solve your toughest challenges. We know technology and can help you design for the user experience, build innovative software, leverage data for actionable insights, implement modern processes and tools, and maintain critical applications and systems.
+
+Our engagement model is designed with flexibility in mind for long-term partnerships. From strategy and implementation to sustained services, we provide technology consultants in custom configurations to fit your priorities and scale over the life cycle of your solutions.
+          </div>
+        </section>
+        <section class="sectionBox">
+          <div class="close-section">close</div>
+          <div class="demo-box">
+            You can increase productivity, better protect information, and simplify IT administration by moving to a cloud and mobility environment. We’ll work with you to ease your migration to Business applications and align it with your organisational objectives and user needs. From strategy and architecture to delivery and maintenance, our approach to technology solutions emphasizes rapid delivery of business value.
+
+At Kay Impex, we believe technology is the catalyst to connect people, exchange ideas, engage customers, and transform businesses — especially when developed strategically and implemented with precision.
+          </div>
+        </section>
+        <section class="sectionBox">
+          <div class="close-section">close</div>
+          <div class="demo-box">
+            Right-sized server, storage, and network solutions and services for small and midsize businesses—designed with the IT generalist in mind.
+
+Whatever they throw at you, you’re going to get it done. But now, you don’t have to do everything by yourself. With Just Right IT from HPE, you can partner with a proven IT expert for right-sized solutions for small and midsize organizations. If you’re just getting started or building momentum, HPE and our local partners enable you to get more IT for your budget and more time for your business.
+          </div>
+        </section>
+      </section> -->
+
+      <section class="stack-cards-section">
+        <div id="gradient" class="section">
+          <!-- <div class="oop"></div> -->
+          <div class="fixed">
+            <h1 class="large">Products And Services (Demo)</h1>
+            <p>Short Info about the Section</p>
+          </div>
+        </div>
+
+        <div class="section">
+          <div style="background-image: url(./assets/road-images/road\ web\ p.webp);" class="fixed">
+            <div id="product" class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="featured-carousel owl-carousel">
+                    <div class="card-container">
+                      <div class="card">
+                        <div class="imgBx">
+                          <img src="./assets/product_images/png lap.png">
+                        </div>
+                        <div class="contentBx">
+                          <h2>HP Omen 15</h2>
+                          <div class="size">
+                            <h3>variants Availale :</h3>
+                            <span>i3</span>
+                            <span>i5</span>
+                            <span>i7</span>
+                            <span>i9</span>
+                          </div>
+                          <div class="color">
+                            <h3>Features :</h3>
+                            <p>16GB of RAM</p>
+                            <p>512GB of NVEMs SSD</p>
+                            <p>Titanium Body</p>
+                            <p>2 Year's of Warranty</p>
+                          </div>
+                          <a href="#">Enquire Now</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <div class="imgBx">
+                          <img src="./assets/product_images/png lap.png">
+                        </div>
+                        <div class="contentBx">
+                          <h2>HP Omen 15</h2>
+                          <div class="size">
+                            <h3>variants Availale :</h3>
+                            <span>i3</span>
+                            <span>i5</span>
+                            <span>i7</span>
+                            <span>i9</span>
+                          </div>
+                          <div class="color">
+                            <h3>Features :</h3>
+                            <p>16GB of RAM</p>
+                            <p>512GB of NVEMs SSD</p>
+                            <p>Titanium Body</p>
+                            <p>2 Year's of Warranty</p>
+                          </div>
+                          <a href="#">Enquire Now</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <div class="imgBx">
+                          <img src="./assets/product_images/png lap.png">
+                        </div>
+                        <div class="contentBx">
+                          <h2>HP Omen 15</h2>
+                          <div class="size">
+                            <h3>variants Availale :</h3>
+                            <span>i3</span>
+                            <span>i5</span>
+                            <span>i7</span>
+                            <span>i9</span>
+                          </div>
+                          <div class="color">
+                            <h3>Features :</h3>
+                            <p>16GB of RAM</p>
+                            <p>512GB of NVEMs SSD</p>
+                            <p>Titanium Body</p>
+                            <p>2 Year's of Warranty</p>
+                          </div>
+                          <a href="#">Enquire Now</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <div class="imgBx">
+                          <img src="./assets/product_images/png lap.png">
+                        </div>
+                        <div class="contentBx">
+                          <h2>HP Omen 15</h2>
+                          <div class="size">
+                            <h3>variants Availale :</h3>
+                            <span>i3</span>
+                            <span>i5</span>
+                            <span>i7</span>
+                            <span>i9</span>
+                          </div>
+                          <div class="color">
+                            <h3>Features :</h3>
+                            <p>16GB of RAM</p>
+                            <p>512GB of NVEMs SSD</p>
+                            <p>Titanium Body</p>
+                            <p>2 Year's of Warranty</p>
+                          </div>
+                          <a href="#">Enquire Now</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <div class="imgBx">
+                          <img src="./assets/product_images/png lap.png">
+                        </div>
+                        <div class="contentBx">
+                          <h2>HP Omen 15</h2>
+                          <div class="size">
+                            <h3>variants Availale :</h3>
+                            <span>i3</span>
+                            <span>i5</span>
+                            <span>i7</span>
+                            <span>i9</span>
+                          </div>
+                          <div class="color">
+                            <h3>Features :</h3>
+                            <p>16GB of RAM</p>
+                            <p>512GB of NVEMs SSD</p>
+                            <p>Titanium Body</p>
+                            <p>2 Year's of Warranty</p>
+                          </div>
+                          <a href="#">Enquire Now</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <div class="imgBx">
+                          <img src="./assets/product_images/png lap.png">
+                        </div>
+                        <div class="contentBx">
+                          <h2>HP Omen 15</h2>
+                          <div class="size">
+                            <h3>variants Availale :</h3>
+                            <span>i3</span>
+                            <span>i5</span>
+                            <span>i7</span>
+                            <span>i9</span>
+                          </div>
+                          <div class="color">
+                            <h3>Features :</h3>
+                            <p>16GB of RAM</p>
+                            <p>512GB of NVEMs SSD</p>
+                            <p>Titanium Body</p>
+                            <p>2 Year's of Warranty</p>
+                          </div>
+                          <a href="#">Enquire Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="product-card-container">
+                        <div class="card-container">
+                            <div class="card">
+                              <div class="imgBx">
+                                <img src="./assets/product_images/png lap.png">
+                              </div>
+                              <div class="contentBx">
+                                <h2>HP Omen 15</h2>
+                                <div class="size">
+                                  <h3>variants Availale :</h3>
+                                  <span>i3</span>
+                                  <span>i5</span>
+                                  <span>i7</span>
+                                  <span>i9</span>
+                                </div>
+                                <div class="color">
+                                    <h3>Features :</h3>
+                                    <p>16GB of RAM</p>
+                                    <p>512GB of NVEMs SSD</p>
+                                    <p>Titanium Body</p>
+                                    <p>2 Year's of Warranty</p>
+                                  </div>
+                                <a href="#">Enquire Now</a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card-container">
+                            <div class="card">
+                              <div class="imgBx">
+                                <img src="./assets/product_images/png lap.png">
+                              </div>
+                              <div class="contentBx">
+                                <h2>HP Omen 15</h2>
+                                <div class="size">
+                                  <h3>variants Availale :</h3>
+                                  <span>i3</span>
+                                  <span>i5</span>
+                                  <span>i7</span>
+                                  <span>i9</span>
+                                </div>
+                                <div class="color">
+                                    <h3>Features :</h3>
+                                    <p>16GB of RAM</p>
+                                    <p>512GB of NVEMs SSD</p>
+                                    <p>Titanium Body</p>
+                                    <p>2 Year's of Warranty</p>
+                                  </div>
+                                <a href="#">Enquire Now</a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card-container">
+                            <div class="card">
+                              <div class="imgBx">
+                                <img src="./assets/product_images/png lap.png">
+                              </div>
+                              <div class="contentBx">
+                                <h2>HP Omen 15</h2>
+                                <div class="size">
+                                  <h3>variants Availale :</h3>
+                                  <span>i3</span>
+                                  <span>i5</span>
+                                  <span>i7</span>
+                                  <span>i9</span>
+                                </div>
+                                <div class="color">
+                                    <h3>Features :</h3>
+                                    <p>16GB of RAM</p>
+                                    <p>512GB of NVEMs SSD</p>
+                                    <p>Titanium Body</p>
+                                    <p>2 Year's of Warranty</p>
+                                  </div>
+                                <a href="#">Enquire Now</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div> -->
+            <img class="man-on-road" src="./assets/road-images/MAN PNG.png" alt="">
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="p fixed">Paragraph Two</div>
+        </div>
+
+        <div class="section">
+          <div class="p fixed">
+
+            <div id="marquee">
+              <div class="marquee">
+                <div class="marquee__group">
+                  <img
+                    src='./assets/clients/adroit black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/AGS black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/Alembic black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/aramex black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/asianpaints black and white.png'
+                    alt=''>
+                </div>
+
+                <div aria-hidden="true" class="marquee__group">
+                  <img
+                  src='./assets/clients/adroit black and white.png'
+                  alt=''>
+                <img
+                  src='./assets/clients/AGS black and white.png'
+                  alt=''>
+                <img
+                  src='./assets/clients/Alembic black and white.png'
+                  alt=''>
+                <img
+                  src='./assets/clients/aramex black and white.png'
+                  alt=''>
+                <img
+                  src='./assets/clients/asianpaints black and white.png'
+                  alt=''>
+                </div>
+              </div>
+
+              <div class="marquee marquee--borders" style="--duration: 100s">
+                <div class="marquee__group">
+                  <p>Our Clients</p>
+                  <p aria-hidden="true">Our Clients</p>
+                  <p aria-hidden="true">Our Clients</p>
+                </div>
+
+                <div aria-hidden="true" class="marquee__group">
+                  <p>Our Clients</p>
+                  <p>Our Clients</p>
+                  <p>Our Clients</p>
+                </div>
+              </div>
+
+              <div class="marquee marquee--reverse">
+                <div class="marquee__group">
+                  <img
+                    src='./assets/clients/BDO black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/Borouge black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/CIBIL black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/cipla black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/COX &  KINGS black and white.png'
+                    alt=''>
+                </div>
+
+                <div aria-hidden="true" class="marquee__group">
+                  <img
+                    src='./assets/clients/BDO black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/Borouge black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/CIBIL black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/cipla black and white.png'
+                    alt=''>
+                  <img
+                    src='./assets/clients/COX &  KINGS black and white.png'
+                    alt=''>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="section">
+          <div class="p fixed">Paragraph Four</div>
+        </div>
+        <div class="section">
+          <div class="p fixed">Paragraph Five</div>
+        </div>
+        <div class="section">
+          <div class="p fixed">Paragraph Six</div>
+        </div>
+        <div class="section">
+          <div class="p fixed">Paragraph Seven</div>
+        </div>
+        <div class="section">
+          <div class="p fixed">Paragraph Eight</div>
+        </div>
+        <div class="section">
+          <p class="fixed white">Last Section of this Section</p>
+        </div>
+      </section>
+
+
+
+    </main>
+
+
+    <!-- <script src="./assets/owlCarousel/js/jquery.min.js"></script> -->
+    <script src="./assets/owlCarousel/js/owl.carousel.min.js"></script>
+    <script src="./assets/owlCarousel/js/main.js"></script>
+  </div>
+  <!-- Vanilla Tilt JS  -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script>
+  <script src="./js/vanillaTiltJs/script.js"></script>
+
+  <!-- Box Layout JS  -->
+  <script src="./js/boxLayout.js"></script>
+
+  <!-- Dynamic Gradient Color Scheme JS  -->
+  <script src="./js/dynamicGradient.js"></script>
+</body>
+
+</html>

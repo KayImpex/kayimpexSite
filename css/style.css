@@ -1,0 +1,915 @@
+/* Primary Style Sheet  */
+section {
+    /* background-color: #fff; */
+    /* height: 100vh; */
+}
+
+  /* Preloader CSS  */
+  #content {
+    display: none;
+    overflow-x: hidden;
+  }
+
+
+.slideshow {
+    list-style-type: none;
+    /* position: fixed; */
+  }
+  
+  /** SLIDESHOW **/
+  .slideshow,
+  .slideshow:after { 
+      /* top: -16px; Not sure why I needed this fix */
+          /* position: relative; */
+          position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      z-index: 0; 
+  }
+  
+  .slideshow li span { 
+          position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      color: transparent;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      opacity: 0;
+      z-index: 0;
+      animation: imageAnimation 30s linear infinite 0s; 
+  }
+  
+  
+  
+  .slideshow li:nth-child(1) span { 
+      background-image: url("../assets/banner_images/CloudServices.jpeg"); 
+  }
+  .slideshow li:nth-child(2) span { 
+      background-image: url("../assets/banner_images/computing.jpeg");
+      animation-delay: 6s; 
+  }
+  .slideshow li:nth-child(3) span { 
+      background-image: url("../assets/banner_images/DataCenter.jpeg");
+      animation-delay: 12s; 
+  }
+  .slideshow li:nth-child(4) span { 
+      background-image: url("../assets/banner_images/DeviceAsAService.jpeg");   
+      animation-delay: 18s; 
+  }
+  .slideshow li:nth-child(5) span { 
+      background-image: url("../assets/banner_images/DigitalWorkspaceSupport.jpeg");
+      animation-delay: 24s; 
+  }
+  
+  
+  
+  @keyframes imageAnimation { 
+      0% { opacity: 0; animation-timing-function: ease-in; }
+      8% { opacity: 1; animation-timing-function: ease-out; }
+      17% { opacity: 1 }
+      25% { opacity: 0 }
+      100% { opacity: 0 }
+  }
+  
+  
+  @keyframes titleAnimation { 
+      0% { opacity: 0 }
+      8% { opacity: 1 }
+      17% { opacity: 1 }
+      19% { opacity: 0 }
+      100% { opacity: 0 }
+  }
+  
+  
+  .no-cssanimations .cb-slideshow li span {
+      opacity: 1;
+  }
+
+
+/* **** ALL THE SECTIONS CSS ****    */
+
+/* Demo Video Code  */
+#homePageVideo {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%; 
+min-height: 100%;
+}
+
+
+.home-banner-section {
+    height: 100vh;
+}  
+
+.banner-section {
+    height: 80vh;
+}
+
+.flipCard-section {
+    /* height: 100vh; */
+    position: relative;
+    background: #ffffff;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.flipCard-section h2 {
+    text-align: center;
+    font-family: Koulen, sans-serif;
+    font-size: 3.7rem;
+    padding-bottom: 30px;
+}
+
+.flipCard-section h4 {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.flipCard-section .cardContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+  .flip-card {
+    background-color: transparent;
+    width: 40%;
+    height: 430px;
+    perspective: 1000px;
+
+    padding: 25px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+
+  }
+  
+  .flip-card:focus {
+      outline: 0;
+  }
+  
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus .flip-card-inner{
+    /* transform: rotateY(180deg); */
+    transform: rotateY(155deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+    border-radius: 15px;
+  }
+  
+  .flip-card-front {
+    /* background: linear-gradient(to left, #4364f7, #6fb1fc); */
+    background: linear-gradient(to bottom left, #000, #ffffff, #000);
+    color: black;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card-back {
+    /* background: linear-gradient(to right, #4364f7, #6fb1fc); */
+    /* background: #000; */
+    background: linear-gradient(to bottom right, #000, #ffff, #000);
+    /* color: white; */
+    /* color: #fff; */
+    color: #000;
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+
+    padding: 10px;
+  }
+
+  .flip-card-back h3 {
+    font-size: 1.75rem;
+    /* color: #fff; */
+    color: #000;
+  }
+
+  .flip-card-back p {
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+  
+
+
+.banner-section1 {
+    height: 80vh;
+}
+
+.banner-section .common-banner-class {
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    background-origin: content-box;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+
+}
+
+.banner-section .computing {
+    background-image: url(../assets/banner_images_webp/computing\ webp.webp);
+}
+
+.banner-section .dataCenter {
+    background-image: url(../assets/banner_images_webp/data\ center\ webp.webp);
+}
+  
+.banner-section .highEndComputing {
+    background-image: url(../assets/banner_images_webp/high\ end\ computing\ and\ storage\ webp.webp);
+}
+
+.banner-section .security {
+    background-image: url(../assets/banner_images_webp/Security\ final\ webp.webp);
+}
+
+.banner-section .networking {
+    background-image: url(../assets/banner_images_webp/networking\ final\ webp.webp);
+}
+
+.banner-section .workplace {
+    background-image: url(../assets/banner_images_webp/workplace\ webp.webp);
+}
+
+.banner-section .cloudServices {
+    background-image: url(../assets/banner_images_webp/cloud\ service\ webp.webp);
+}
+
+.banner-section .itinfra {
+    background-image: url(../assets/banner_images_webp/IT\ infrastructure\ management\ webp.webp);
+}
+
+.banner-section .daas {
+    background-image: url(../assets/banner_images_webp/device\ as\ a\ service\ webp.webp);
+}
+
+.banner-section .payinfra {
+    background-image: url(../assets/banner_images_webp/pay\ as\ you\ go\ infa\ webp.webp);
+}
+
+.banner-section .itfinance {
+    background-image: url(../assets/banner_images_webp/IT\ finance\ webp.webp);
+}
+
+.banner-section .digiwork {
+    background-image: url(../assets/banner_images_webp/digital\ woekpace\ support\ webp.webp);
+}
+
+.banner-section .contactUs {
+    background-image: url(../assets/banner_images/contactUs.webp);
+}
+
+.banner-section .howWeWork {
+    background-image: url(../assets/banner_images/how\ we\ work\ banner.webp);
+}
+
+.banner-section .OurTeam {
+    background-image: url(../assets/banner_images/our-team.jpg);
+}
+
+.title-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        padding: 4% 0;
+
+        position: relative;
+    background: #ffffffd6;
+}
+
+.title-section .page-title {
+    width: 70vw;
+    text-align: center;
+}
+
+.title-section .page-title h1 {
+    color: black;
+}
+
+.title-section .page-title p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.opportunities-section {
+    position: relative;
+    background-color: #ffffff9e;
+    /* width: 100vw; */
+}
+
+.opportunities {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.opportunities h3 {
+    font-size: 50px;
+    padding: 30px;
+    font-weight: 100;
+}
+
+.opportunities-boxes {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.box {
+    width: 40%;
+    padding: 50px;
+    text-align: center;
+    line-height: 1.5em;
+    background-color: black;
+    border: 1px dotted black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    color: aliceblue;
+}
+
+.box h4 {
+    font-size: xx-large;
+    padding-bottom: 10px;
+}
+
+.box p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+.blog-section {
+    position: relative;
+    background-color: #fff;
+} 
+
+.blog-section .heading-section {
+    font-size: 2.7rem;
+  }
+
+.form-section {
+    position: relative;
+    background: #ffffff;
+    height: 140vh;
+}
+
+.form-section iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.ourContacts-section {
+    position: relative;
+    background: #ffffffd6;
+    height: 70vh;
+}  
+
+.ourContacts-section h2 {
+    text-align: center;
+    font-family: 'Koulen';
+    font-size: xxx-large;
+    padding: 15px;
+}
+
+.ourContacts-section .contact-info-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.ourContacts-section .contact-info-div div {
+    padding-bottom: 15px;
+    border-bottom: 4px double black;
+}
+
+.ourContacts-section p {
+    margin-bottom: 0;
+    font-size: larger;
+}
+
+.ourContacts-section .contact-info-div .working-hours .important {
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+}
+
+
+.team-management-section {
+    height: 60vh;
+    position: relative;
+    background-color: #fff;
+}
+
+.team-leaders-section {
+    height: 60vh;
+    position: relative;
+    background-color: #000;
+}
+
+.team-management-section h3 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: xxx-large;
+}
+
+.team-leaders-section h3 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: xxx-large;
+    color: #fff;
+}
+
+.team-leaders-section h5 {
+    color: #fff;
+}
+
+.team-leaders-section p {
+    color: #fff;
+}
+
+.team-management-section .people-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    padding-bottom: 40px;
+}
+
+.team-leaders-section .people-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    padding-bottom: 40px;
+}
+
+.team-management-section .people-container .people {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    border: 4px outset #fff;
+    padding: 15px;
+}
+
+.team-leaders-section .people-container .people {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    border: 4px outset gray;
+    padding: 15px;
+}
+
+.team-management-section .people-container .people .image {
+    height: 200px;
+    width: 200px;
+}
+
+.team-leaders-section .people-container .people .image {
+    height: 200px;
+    width: 200px;
+}
+
+.team-management-section .people-container .people .image  img{
+    height: 100%;
+}
+
+.team-leaders-section .people-container .people .image  img{
+    height: 100%;
+}
+
+/* MEDIA QUERIES    */
+@media screen and (max-width: 820px) {
+
+    .opportunities-boxes {
+        display: flex;
+        padding: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .box {
+        width: 100%;
+        /* padding: 50px; */
+        text-align: center;
+        line-height: 1.5em;
+        background-color: black;
+        border: 1px dotted black;
+        border-radius: 20px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        color: aliceblue;
+    }
+
+    .box p {
+        font-size: 17px;
+        padding: 5px;
+    }
+
+    .banner-section1 {
+        height: 43vh;
+    }
+
+    #homePageVideo {
+        position: fixed;
+        right: 0;
+       
+        min-width: 0;
+        min-height: 0;
+        width: 100%;
+        top: 0;
+    }
+
+    .flip-card {
+        width: 50%;
+        height: 590px;
+    }
+
+    .flip-card-front h3 {
+        padding: 10px;
+    }  
+
+    .ourContacts-section {
+        height: 65vh;
+      }
+
+    .form-section {
+        /* height: 105vh; */
+        height: 118vh;
+    }  
+
+    .team-management-section {
+        height: 70vh;
+    }
+
+    .team-leaders-section {
+        height: 70vh;
+    }
+
+    .team-management-section .people-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .team-leaders-section .people-container {
+        display: flex;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+
+    .team-management-section .people-container .people {
+        border: 0;
+        padding: 10px;
+    }
+
+    .team-leaders-section .people-container .people {
+        border: 0;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .title-section .page-title h1 {
+        font-size: 3em;
+    }
+    
+    .title-section .page-title p {
+        font-size: 1em;
+    }
+    
+
+    .banner-section1 {
+        height: 35vh;
+    }
+
+    #homePageVideo {
+        position: fixed;
+        right: 0;
+       
+        min-width: 0;
+        min-height: 0;
+        width: 100%;
+        top: 0;
+    }
+
+    .flip-card {
+        width: 300px;
+        height: 60 0px;
+      }
+
+      .ourContacts-section {
+        height: 80vh;
+      }
+
+      .ourContacts-section .contact-info-div {
+        padding-left: 5px;
+      }
+
+      .ourContacts-section .contact-info-div h3 {
+        font-size: medium;
+      }
+
+      .ourContacts-section .contact-info-div p {
+        font-size: small;
+      }
+
+      .form-section {
+        height: 190vh;
+    }  
+
+    .team-management-section {
+        height: 140vh;
+    }
+
+    .team-leaders-section {
+        height: 180vh;
+    }
+
+    .team-management-section .people-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .team-leaders-section .people-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .team-management-section .people-container .people {
+        border: 0;
+        padding: 10px;
+    }
+
+    .team-leaders-section .people-container .people {
+        border: 0;
+        padding: 10px;
+    }
+
+    .team-management-section .people-container .people .image {
+        height: 120px;
+        width: 120px;
+    }
+
+    .team-leaders-section .people-container .people .image {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .team-management-section {
+        height: 140vh;
+    }
+
+    .team-leaders-section {
+        height: 170vh;
+    }
+}
+
+
+
+/* ====================================
+HOME PAGE COUNTER CSS 
+==================================== */
+.counter-section {
+    /* height: 80vh; */
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.counter-section h3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.counter-up{
+    min-height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .counter-up::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: rgba(0,0,0,0.8); */
+  }
+  .counter-up .content{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;;
+  }
+  .counter-up .content .box{
+    /* border: 1px dashed rgba(255,255,255,0.6); */
+    width: calc(25% - 30px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    height: 50%;
+    align-content: center;
+  }
+  .content .box .icon{
+    font-size: 50px;
+    color: #FFF;
+  }
+  .content .box .counter{
+    font-size: 60px;
+    font-weight: 500;
+    color: #FFF;
+    font-family: sans-serif;
+  }
+  .content .box .text{
+    font-size: x-large;
+    font-weight: 400;
+    color: #FFF;
+  }
+  @media screen and (max-width: 1036px) {
+    .counter-up{
+      padding: 50px 50px 0 50px;
+    }
+    .counter-up .content .box{
+      width: calc(50% - 30px);
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    .counter-up .content .box{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .wrapper{
+      padding: 20px;
+    }
+    .counter-up{
+      padding: 30px 20px 0 20px;
+    }
+  }
+  
+  @media screen and (max-width: 414px)  {
+    .counter-section {
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+        align-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .counter-up {
+        height: 100%;
+    }
+
+    .counter-up .content {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .counter-up .content .box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+    }
+
+    .content .box .icon {
+        font-size: 30px;
+    }
+
+    .content .box .counter {
+        font-size: 35px;
+    }
+
+    .content .box .text {
+        font-size: medium;
+    }
+  }  
