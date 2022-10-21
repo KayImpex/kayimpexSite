@@ -37,14 +37,14 @@
 .footer-links a {
 	color: aliceblue;
 	text-decoration: underline;
-    text-decoration-color: cyan;
+    text-decoration-color: cyan;   
 	text-decoration-thickness: 2px;
     text-decoration-style: double;
 	transition: 0.3s
 }
 
 .footer-links a:hover {
-	color: cyan;
+	color: cyan;  
 }
 
 .footer-icons {
@@ -81,14 +81,14 @@
 .call-number {
 	color: aliceblue;
 	text-decoration: underline;
-    text-decoration-color: cyan;
+    text-decoration-color: cyan;  
 	text-decoration-thickness: 2px;
     text-decoration-style: double;
 	transition: 0.3s
 }
 
 .call-number:hover {
-	color: cyan;
+	color: cyan;   
 }
 
 @media screen and (max-width: 820px) {
