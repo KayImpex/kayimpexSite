@@ -848,6 +848,9 @@ HOME PAGE COUNTER CSS
       width: calc(50% - 30px);
       margin-bottom: 50px;
     }
+    .team-leaders-section {
+        height: 70vh;
+    }
   }
   @media screen and (max-width: 580px) {
     .counter-up .content .box{
@@ -863,6 +866,7 @@ HOME PAGE COUNTER CSS
     }
   }
   
+
   @media screen and (max-width: 414px)  {
     .counter-section {
         height: 130vh;
