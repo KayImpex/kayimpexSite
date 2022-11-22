@@ -14,8 +14,8 @@
 }
 
 .wrapper {
-    /* background: linear-gradient(60deg, #420285, #08BDBD); */
-    background: #000;
+    background: linear-gradient(180deg, #420285, #08BDBD);
+    /* background: #000; */
     height: 100%;
     width: 100%;
     display: flex;
@@ -34,7 +34,8 @@
   }
 
   .wrapper .ourPartners h3 {
-       font-size: xxx-large;
+       /* font-size: xxx-large; */
+       font-size: 9em ;
   }
 
   .wrapper .ourPartners p {
