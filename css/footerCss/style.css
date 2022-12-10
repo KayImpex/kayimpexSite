@@ -5,6 +5,11 @@
 	color: aliceblue;
 }
 
+.footer-section p {
+	color: aliceblue;
+	line-height: 35px;
+}
+
 .footer {
 	display: flex;
     height: 100%;
