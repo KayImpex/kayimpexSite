@@ -1,6 +1,6 @@
 .carousel-section {
     position: relative;
-    height: 50vh;
+    height: 40vh;
     background: #FFF;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .oem-section .wrapper .ourPartners > h3, p {
-  color: #FFF;
+  color: #000;
 }
 
 .wrapper {
@@ -349,13 +349,17 @@ width: 960px; */
     }
 
     .carousel-section {
-        height: 80vh;
+        height: 55vh;
     }
 
     .carousel-section p {
         text-align: center;
         font-size: large;
         padding: 5px;
+    }
+
+    .carousel-section h3 {
+      font-size: 40px;
     }
 
     .carousel-container {
