@@ -21,7 +21,7 @@ fetch(url)
       // console.log(formattedDate)
 
       tableData += `
-      <a class='post-link' href='${values.link}' target="_blank">
+  <a class='post-link' href='${values.link}' target="_blank">
     <div class='post-wrap'>
 
       <div class='post-image' style='background-image: url(${values.featured_media_src_url}'>
